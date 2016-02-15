@@ -5,7 +5,8 @@
     var count = dataAry.length, step = 1;
     var banner = document.querySelector(".banner"), inner = banner.querySelector(".inner"), imgList = inner.getElementsByTagName("img");
     var tip = banner.querySelector(".tip"), spanList = tip.getElementsByTagName("span");
-    var winW = document.documentElement.clientWidth || document.body.clientWidth, winH = document.documentElement.clientHeight || document.body.clientHeight;
+    var winW = document.documentElement.clientWidth || document.body.clientWidth,
+        winH = document.documentElement.clientHeight || document.body.clientHeight;
 
     //绑定图片和焦点的数据
     ~function () {

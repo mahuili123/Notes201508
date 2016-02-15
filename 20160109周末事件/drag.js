@@ -58,7 +58,7 @@ function drop(){//自由落体
 	if(posi>=maxBottom){
 		this.style.top=maxBottom+"px";
 		this.dropSpeed*=-1;//调头
-		
+
 		//如果连续的执行这儿的代码，则说明运动已经是连续的到达了终点，就应该停止。
 			this.flag++
 	}else{
@@ -67,7 +67,6 @@ function drop(){//自由落体
 	}
 	if(this.flag<2)
 		this.dropTimer=window.setTimeout(processThis(this,drop),20);
-	
 }
 function fly(){
 	this.flySpeed*=.97;
